@@ -20,7 +20,7 @@
     const day = today.getDay(); 
     // 0 = Sunday, 1 = Monday, ... 4 = Thursday
 
-    const answer = (day === 4) ? "Yes" : "No";
+    const answer = (day === 4 && today.toDateString() !== 'Thu May 07 2026') ? "Yes" : "No";
 
     document.getElementById("answer").textContent = answer;
   </script>
